@@ -1,0 +1,30 @@
+public class CompleteMathApp {
+    public static void runAllOperations() {
+        Integer a = 50;
+        Integer b = 10;
+
+        // Welcome Message
+        System.debug('Welcome to Apex Programming Language of Salesforce Platform');
+
+        // Basic Arithmetic
+        System.debug('Addition: ' + (a + b));
+        System.debug('Subtraction: ' + (a - b));
+        System.debug('Multiplication: ' + (a * b));
+        
+        System.debug('Division: ' + (a / b));
+        if (b != 0) { System.debug('Division: ' + (Decimal.valueOf(a) / b)); } 
+        else { System.debug('Division: Cannot divide by zero'); } 
+
+        // Table of 5
+        System.debug('--- Table of 5 ---');
+        for (Integer i = 1; i <= 10; i++) {
+            System.debug('5 x ' + i + ' = ' + (5 * i));
+        }
+
+        // Table of 10
+        System.debug('--- Table of 10 ---');
+        for (Integer i = 1; i <= 10; i++) {
+            System.debug('10 x ' + i + ' = ' + (10 * i));
+        }
+    }
+}
